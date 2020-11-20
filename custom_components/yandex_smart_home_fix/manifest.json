@@ -1,0 +1,12 @@
+{
+  "domain": "yandex_smart_home_fix",
+  "name": "Yandex Smart Home Fix",
+  "documentation": "https://github.com/AlexxIT/yandex_smart_home_fix",
+  "requirements": [],
+  "dependencies": [
+    "frontend"
+  ],
+  "codeowners": [
+    "@AlexxIT"
+  ]
+}
