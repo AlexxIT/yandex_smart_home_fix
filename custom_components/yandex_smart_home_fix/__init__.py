@@ -8,7 +8,8 @@ async def async_setup(hass: HomeAssistant, hass_config: dict):
     @middleware
     async def fix_middleware(request, handler):
         resp: Response = await handler(request)
-        resp._compression = False
+        if request.raw_path == '/auth/token':
+            resp._compression = False
         return resp
 
     hass.http.app._middlewares = FrozenList(
